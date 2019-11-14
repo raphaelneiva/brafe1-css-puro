@@ -1,4 +1,5 @@
 /* Reset */
+
 body, h1, h2, h3, p, ul {
     padding: 0px;
     margin: 0px;
@@ -14,6 +15,7 @@ body {
 }
 
 /* Menu */
+
 .menu {
     background: #252525;
     padding: 20px;
@@ -29,7 +31,6 @@ body {
     content: '';
     display: table;
     clear: both;
-
 }
 
 a.menu-logo {
@@ -56,6 +57,20 @@ a.menu-logo {
     font-size: 1.125em;
 }
 
+@media (max-width: 739px) {
+    .menu {
+        text-align: center;
+    }
+    a.menu-logo {
+        float: none;
+        margin: 0 auto;
+    }
+    .menu-nav {
+        float: none;
+        clear: both;
+    }
+}
+
 /* Class Intro */
 
 .intro {
@@ -64,7 +79,6 @@ a.menu-logo {
     padding: 150px 0;
     text-align: center;
     color: #fff;
-
 }
 
 .intro h1 {
@@ -79,13 +93,17 @@ a.menu-logo {
     height: 4px;
     background: #fff;
     margin: 10px auto;
-
-}    
+}
 
 .intro p {
     font-style: italic;
     font-size: 1.125em;
+}
 
+@media (max-width: 739px) {
+    .intro {
+        padding: 60px 0;
+    }
 }
 
 /* Sobre */
@@ -104,14 +122,12 @@ a.menu-logo {
     content: '';
     display: table;
     clear: both;
-
 }
 
 .sobre h2 {
     text-align: center;
     font-size: 2.25em;
     margin-bottom: 60px;
-
 }
 
 .sobre-item {
@@ -137,16 +153,34 @@ a.menu-logo {
     padding: 5px 0 10px 0;
     top: -25px;
     position: relative;
-     
 }
 
-.sobre > p {
+.sobre>p {
     font-size: 1.125em;
     line-height: 1.4em;
     font-style: italic;
     text-align: center;
     margin: 20px auto;
     max-width: 460px;
+}
+
+@media (min-width: 740px) and (max-width: 980px) {
+    .sobre-container {
+        max-width: 720px;
+    }
+    .sobre-item {
+        width: 340px;
+    }
+}
+
+@media (max-width: 739px) {
+    .sobre-container {
+        max-width: 300px;
+    }
+    .sobre-item {
+        width: 300px;
+        margin: 0 auto;
+    }
 }
 
 /* Produtos */
@@ -224,6 +258,24 @@ h2.produtos-mineiro::before {
     margin: 20px auto 0 auto;
 }
 
+@media (min-width: 740px) and (max-width: 980px) {
+    .produtos-container {
+        max-width: 720px;
+    }
+    .produtos-item {
+        width: 220px;
+    }
+}
+
+@media (max-width: 739px) {
+    .produtos-container {
+        max-width: 300px;
+    }
+    .produtos-item {
+        margin: 0 auto 20px auto;
+    }
+}
+
 /* Locais */
 
 .locais {
@@ -243,19 +295,17 @@ h2.produtos-mineiro::before {
     clear: both;
 }
 
-.locais-item img{
+.locais-item img {
     width: 460px;
     float: left;
     display: block;
     margin: 0 10px;
-
 }
 
-.locais-item > div {
+.locais-item>div {
     width: 460px;
     float: left;
     margin: 0 10px;
-
 }
 
 .locais-item h2 {
@@ -277,6 +327,25 @@ h2.produtos-mineiro::before {
     border: 3px solid;
     color: #252525;
     padding: 10px 20px;
+}
+
+@media (min-width: 740px) and (max-width: 980px) {
+    .locais {
+        max-width: 720px;
+    }
+    .locais-item>div, .locais-item img {
+        max-width: 340px;
+    }
+}
+
+@media (max-width: 739px) {
+    .locais {
+        max-width: 300px;
+    }
+    .locais-item>div, .locais-item img {
+        width: 300px;
+        margin: 0px;
+    }
 }
 
 /* Assine */
@@ -325,7 +394,7 @@ h2.produtos-mineiro::before {
 .assine input {
     width: 320px;
     border: 3px solid #252525;
-    background: none; 
+    background: none;
     font-size: 1.5em;
     font-style: italic;
     font-family: Georgia, serif;
@@ -345,13 +414,32 @@ h2.produtos-mineiro::before {
     cursor: pointer;
 }
 
+@media (min-width: 740px) and (max-width: 980px) {
+    .assine-container {
+        max-width: 720px;
+    }
+    .assine-info, .assine form, .assine input {
+        width: 340px;
+    }
+}
+
+@media (max-width: 739px) {
+    .assine-container {
+        max-width: 300px;
+    }
+    .assine-info, .assine form, .assine input {
+        width: 300px;
+        margin: 10px 0 0 0;
+    }
+}
+
 /*Footer*/
+
 .footer::after, .footer::before {
     content: '';
     display: table;
     clear: both;
 }
-
 
 .footer {
     background: #d6d3c8;
@@ -376,9 +464,17 @@ h2.produtos-mineiro::before {
     display: block;
 }
 
+@media (max-width: 739px) {
+    .footer-container {
+        max-width: 300px;
+    }
+    .footer p {
+        float: none;
+        float: 0px;
+    }
 
-
-
-
-
-
+    .footer img {
+        float: none;
+        margin: 20px 0;
+    }
+}
